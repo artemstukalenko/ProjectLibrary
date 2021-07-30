@@ -18,6 +18,8 @@ public class FirstView {
     public static String seeBooksList;
     public static String booksListString;
     public static String toHomePage;
+    public static String seeSubscriptionsList;
+    public static String subscriptionsListString;
 
     static {
         howToLogin = bundle.getString(TextConstants.HOW_DO_YOU_WISH_TO_LOGIN);
@@ -30,6 +32,8 @@ public class FirstView {
         seeBooksList = bundle.getString(TextConstants.SEE_BOOK_LIST);
         booksListString = bundle.getString(TextConstants.BOOK_LIST_STRING);
         toHomePage = bundle.getString(TextConstants.TO_HOME_PAGE);
+        seeSubscriptionsList = bundle.getString(TextConstants.SEE_SUBSCRIPTIONS_LIST);
+        subscriptionsListString = bundle.getString(TextConstants.SUBSCRIPTIONS_LIST_STRING);
     }
 
     public static void initStringFields(ResourceBundle bundle) {
@@ -43,6 +47,8 @@ public class FirstView {
         seeBooksList = bundle.getString(TextConstants.SEE_BOOK_LIST);
         booksListString = bundle.getString(TextConstants.BOOK_LIST_STRING);
         toHomePage = bundle.getString(TextConstants.TO_HOME_PAGE);
+        seeSubscriptionsList = bundle.getString(TextConstants.SEE_SUBSCRIPTIONS_LIST);
+        subscriptionsListString = bundle.getString(TextConstants.SUBSCRIPTIONS_LIST_STRING);
     }
 
     public FirstView() {}
@@ -88,4 +94,8 @@ public class FirstView {
     public String getBooksListString() {return booksListString;}
 
     public String getToHomePage() {return toHomePage;}
+
+    public String getSeeSubscriptionsList() {return seeSubscriptionsList;}
+
+    public String getSubscriptionsListString() {return subscriptionsListString;}
 }

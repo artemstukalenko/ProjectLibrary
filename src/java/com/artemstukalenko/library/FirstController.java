@@ -48,4 +48,11 @@ public class FirstController {
         return "admin-entry-page";
     }
 
+    @RequestMapping("/asLibrarian")
+    public String getLibrarianEntryPage(Model model) {
+        model.addAttribute("locale", controlledView);
+
+        return "librarian-entry-page";
+    }
+
 }

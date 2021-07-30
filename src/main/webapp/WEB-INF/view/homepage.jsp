@@ -30,6 +30,14 @@
 
 <br><br><br>
 
+<security:authorize access="hasAnyRole('LIBRARIAN', 'ADMIN')">
+
+    <input type="button" value="${locale.seeSubscriptionsList}" onclick="window.location.href = 'asLibrarian'">
+
+</security:authorize>
+
+<br><br><br>
+
 <security:authorize access="hasRole('ADMIN')">
 
     <input type="button" value="${locale.seeUsersList}" onclick="window.location.href = 'asAdmin'">

@@ -11,4 +11,6 @@ public interface TextConstants {
     String SEE_BOOK_LIST="see.books.list";
     String BOOK_LIST_STRING = "books.list";
     String TO_HOME_PAGE = "to.home.page";
+    String SEE_SUBSCRIPTIONS_LIST = "see.subscriptions.list";
+    String SUBSCRIPTIONS_LIST_STRING = "subscriptions.list";
 }
