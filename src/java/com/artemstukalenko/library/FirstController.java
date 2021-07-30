@@ -34,7 +34,7 @@ public class FirstController {
         return "homepage";
     }
 
-    @RequestMapping("/asUser")
+    @RequestMapping("/booksList")
     public String getUserEntryPage(Model model) {
         model.addAttribute("locale", controlledView);
 

@@ -13,6 +13,11 @@ public class FirstView {
     public static String loginAsAdmin;
     public static String loggedInAsUser;
     public static String loggedInAsAdmin;
+    public static String usersListString;
+    public static String seeUsersList;
+    public static String seeBooksList;
+    public static String booksListString;
+    public static String toHomePage;
 
     static {
         howToLogin = bundle.getString(TextConstants.HOW_DO_YOU_WISH_TO_LOGIN);
@@ -20,6 +25,11 @@ public class FirstView {
         loginAsAdmin = bundle.getString(TextConstants.LOGIN_AS_ADMIN);
         loggedInAsUser = bundle.getString(TextConstants.LOGGED_IN_AS_USER);
         loggedInAsAdmin = bundle.getString(TextConstants.LOGGED_IN_AS_ADMIN);
+        usersListString = bundle.getString(TextConstants.USERS_LIST_STRING);
+        seeUsersList = bundle.getString(TextConstants.SEE_USERS_LIST);
+        seeBooksList = bundle.getString(TextConstants.SEE_BOOK_LIST);
+        booksListString = bundle.getString(TextConstants.BOOK_LIST_STRING);
+        toHomePage = bundle.getString(TextConstants.TO_HOME_PAGE);
     }
 
     public static void initStringFields(ResourceBundle bundle) {
@@ -28,6 +38,11 @@ public class FirstView {
         loginAsAdmin = bundle.getString(TextConstants.LOGIN_AS_ADMIN);
         loggedInAsUser = bundle.getString(TextConstants.LOGGED_IN_AS_USER);
         loggedInAsAdmin = bundle.getString(TextConstants.LOGGED_IN_AS_ADMIN);
+        usersListString = bundle.getString(TextConstants.USERS_LIST_STRING);
+        seeUsersList = bundle.getString(TextConstants.SEE_USERS_LIST);
+        seeBooksList = bundle.getString(TextConstants.SEE_BOOK_LIST);
+        booksListString = bundle.getString(TextConstants.BOOK_LIST_STRING);
+        toHomePage = bundle.getString(TextConstants.TO_HOME_PAGE);
     }
 
     public FirstView() {}
@@ -63,4 +78,14 @@ public class FirstView {
     public String getLoggedInAsAdmin() {
         return loggedInAsAdmin;
     }
+
+    public String getUsersListString() {return usersListString;}
+
+    public String getSeeUsersList() {return seeUsersList;}
+
+    public String getSeeBooksList() {return seeBooksList;}
+
+    public String getBooksListString() {return booksListString;}
+
+    public String getToHomePage() {return toHomePage;}
 }

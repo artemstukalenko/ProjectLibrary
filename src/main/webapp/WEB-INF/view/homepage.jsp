@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
@@ -21,23 +22,19 @@
 
 <br><br><br><br>
 
+<form:form action="booksList" modelAttribute="locale">
+
+    <input type="submit" value="${locale.seeBooksList}"/>
+
+</form:form>
+
 <br><br><br>
 
-    <h3>${locale.howToLogin}</h3>
+<security:authorize access="hasRole('ADMIN')">
 
-    <form:form action="asUser" modelAttribute="locale">
+    <input type="button" value="${locale.seeUsersList}" onclick="window.location.href = 'asAdmin'">
 
-        <input type="submit" value=${locale.loginAsUser} style="width:200px;"/>
-
-    </form:form>
-
-    <br><br><br>
-
-    <form:form action="asAdmin" modelAttribute="locale">
-
-        <input type="submit" value=${locale.loginAsAdmin} style="width:200px;"/>
-
-    </form:form>
+</security:authorize>
 
 </body>
 
